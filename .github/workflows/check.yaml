@@ -1,13 +1,12 @@
-
 name: Checks
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   release:
-    types: [ created ]
+    types: [created]
 
 jobs:
   build-and-test:
@@ -17,6 +16,6 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
+          node-version: "18.x"
       - run: npm ci
       - run: npm run format:check
