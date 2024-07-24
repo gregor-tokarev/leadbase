@@ -9,6 +9,7 @@
     "format:check": "prettier --check ."
   },
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "prettier": "^3.2.5",
     "turbo": "^2.0.9",
     "typescript": "^5.4.5"
@@ -20,5 +21,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "nanoid": "^5.0.7",
+    "tailwindcss-animate": "^1.0.7"
+  }
 }

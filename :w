@@ -1,0 +1,9 @@
+import { db } from "@/libs/db";
+import { users } from "@/schema/auth";
+import { eq, InferSelectModel } from "drizzle-orm"
+
+export async function getUserByEmail(email: string): Promise<InferSelectModel<typeof users> | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.email, email)).execute()
+
+    return user
+}

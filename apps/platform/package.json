@@ -7,15 +7,30 @@
     "start": "vinxi start"
   },
   "dependencies": {
+    "@kobalte/core": "^0.13.4",
+    "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "@modular-forms/solid": "^0.22.1",
     "@solidjs/router": "^0.14.1",
     "@solidjs/start": "^1.0.6",
     "autoprefixer": "^10.4.19",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.29.5",
+    "lucia": "^3.2.0",
     "postcss": "^8.4.38",
+    "postgres": "^3.4.4",
     "solid-js": "^1.8.18",
+    "solidjs-remixicon": "^1.2.0",
+    "tailwind-merge": "^2.4.0",
     "tailwindcss": "^3.4.3",
-    "vinxi": "^0.4.1"
+    "tailwindcss-animate": "^1.0.7",
+    "vinxi": "^0.4.1",
+    "zod": "^3.23.8"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "drizzle-kit": "~0.21.0"
   }
 }
